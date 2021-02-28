@@ -133,7 +133,19 @@ class _SelectScreenState extends State<SelectScreen> {
                         ),
                         SizedBox(width: 10),
                       ],
-                      AddBox(),
+                      AddBox(
+                        onClick: () => ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            backgroundColor: Palette.accent,
+                            content: Text(
+                              'I`m a prototype! I will be clickable In the future!\n -> Click the first element!',
+                              style: Theme.of(context).textTheme.bodyText1,
+                              textAlign: TextAlign.center,
+                            ),
+                            duration: const Duration(seconds: 5),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                   if (selected.length > 0 && widget.nextScreen != null) ...[

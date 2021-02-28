@@ -1,11 +1,11 @@
 {
-    "name": "challengefinder",
-    "short_name": "challengefinder",
+    "name": "UnMaze",
+    "short_name": "UnMaze",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "A Tool to define your challenge the right way.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

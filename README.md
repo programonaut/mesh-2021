@@ -1,2 +1,5 @@
-# mesh-2021
-This is the repository for our solution for the mesh hackathon 2021
+# Titel: UnMaze
+# Slogan: Damit die Challenge-Formulierung nicht zur Challenge wird!
+# Kurzbeschreibung der Solution und Präsentation mit den Schlüsselbotschaften
+Solution / Prototyp Link / Dokumentation / Beschreibung
+# Name des Teams und der einzelnen Teammitglieder: Johannes Schakniß, Maximilian Kürschner

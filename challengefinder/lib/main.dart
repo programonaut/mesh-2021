@@ -1,3 +1,4 @@
+import 'package:challengefinder/screens/challenge_screen.dart';
 import 'package:challengefinder/screens/define_challenge.dart';
 import 'package:challengefinder/screens/multi_select_screen.dart';
 import 'package:challengefinder/screens/question_screen.dart';
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'UnMaze',
       theme: ThemeData(
         fontFamily: 'Roboto',
         primarySwatch: Colors.blue,
@@ -33,26 +35,28 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: SelectScreen(
-        history: "Unmaze!",
+        history: "UnMaze!",
         call: "Wähle dein Thema!",
         category: "Thema",
         tags: ["Sustainability"],
-        nonTags: ["Mobility"],
+        nonTags: ["Mobility", "Enviromental", "Fernseh", "Freizeit"],
         nextScreen: SelectScreen(
           history: "Sustainability",
           call: "Wähle die beteiligten Handlungsorte!",
           category: "Handlungsort",
           tags: ["Schule"],
+          nonTags: ["Arbeitsplatz", "Universität", "Pausenraum", "Sporthalle", "Fußballplatz", "Schulhof"],
           nextScreen: SelectScreen(
             history: "Schule",
             call: "Wähle die beteiligten Charaktere!",
             category: "Charakter",
             tags: ["Schüler"],
+            nonTags: ["Lehrer", "Professoren", "Kinder", "Eltern", "Mitarbeiter", "Eigentümer"],
             nextScreen: SelectScreen(
               history: "Schüler",
               call: "Wähle die beteiligten Charaktere!",
               category: "Potentielles Problem",
-              tags: ["Abfall"],
+              tags: ["Abfall", "Pausen", "Mittagessen", "Lernatmosphere", "Lernform", "Spielplatz"],
               //Auswahl der favs
               nextScreen: MultiSelectScreen(
                 call: "Triff deine Auswahl!",
@@ -63,7 +67,7 @@ class MyApp extends StatelessWidget {
                 },
                 // Define the challenge (new screen)
                 nextScreen: DefineChallenge(
-                  call: "Definiere deine challenge!",
+                  call: "Definiere deine Challenge!",
                   categories: {
                     "Handlungsort": ["Schule"],
                     "Charakters": ["Schüler"],
@@ -71,17 +75,20 @@ class MyApp extends StatelessWidget {
                   },
                   // frage, antwort spiel
                   nextScreen: QuestionScreen(
+                    history: "Wie können wir Schüler[n] in der Schule mit dem Abfall[-Problem] helfen?",
                     call: "Beantworte die Frage!",
                     category: "Charakter",
                     nextScreen: QuestionScreen(
+                      history: "Wie können wir Schüler[n] in der Schule mit dem Abfall[-Problem] helfen?",
                       call: "Beantworte die Frage!",
                       category: "Problem",
                       nextScreen: QuestionScreen(
+                        history: "Wie können wir Schüler[n] in der Schule mit dem Abfall[-Problem] helfen?",
                         call: "Beantworte die Frage!",
                         category: "Bedürfniss",
-                        nextScreen: SelectScreen(
-                          category: "You got your challenge",
-                          tags: ["Schule"],
+                        nextScreen: ChallengeScreen(
+                          call: "You got your challenge",
+                          challenge: "Wie können wir Schüler[n] in der Schule mit dem Abfall[-Problem] helfen?",
                         ),
                       ),
                     ),

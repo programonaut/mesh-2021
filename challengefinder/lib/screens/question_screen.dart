@@ -99,7 +99,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
   }
 
   String handleSelectedString() {
-    if (selected.length == 2) return "${selected[0]} und ${selected[1]}";
+    if (selected.length == 2) return "${selected[0]} & ${selected[1]}";
     return selected[0];
   }
 
