@@ -2,7 +2,7 @@
 ## Damit die Challenge-Formulierung nicht zur Challenge wird!
 <img src="https://user-images.githubusercontent.com/47224024/109419663-da711500-79ce-11eb-91f1-e531d67f7f39.png" width="256" height="256" /><br/>
 __Solution:__ Ein Tool um Design Challenges für einen Design Thinking Prozess zu definieren.<br/>
-__Prototyp Link:__ https://mesh.deved.tech/
+__Prototyp Link:__ https://mesh.programonaut.com/
 <br/>
 __Beschreibung:__<br/>
 Great Questions Lead to Great Design and Innovation! Wenn man eine gute Design Challenge hat...<br/>
