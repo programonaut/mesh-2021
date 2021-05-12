@@ -11,7 +11,6 @@ Die Theorie in die Praxis umzusetzen ist nich immer einfach.<br/>
 Unser Tool UnMaze führt dich einfach step by step zu deiner Perfekten Design Challenge!<br/>
 
 __Team UnMaze:__ Johannes Schakniß, Maximilian Kürschner
-__Kontakte:__ https://deved.tech/mesh/
 
 __Screenshots:__<br/>
 ![Screenshot 1](https://user-images.githubusercontent.com/47224024/109419657-d3e29d80-79ce-11eb-8ded-0c1e28800c0a.png)
